@@ -1,2 +1,2 @@
-# HamCraft-UB.github.io
-The Ultimate UBG Site
+# HamCraft UB
+One of the best ubg sites out there.
