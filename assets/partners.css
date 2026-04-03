@@ -1,0 +1,132 @@
+       
+        :root {
+            --primary-pink: #FDF0F3; 
+            --accent-pink: #E91E63;   
+            --dark-pink: #880E4F;    
+            --card-bg: #FFB6C1;      
+            --text-main: #5555FF;
+        }
+
+   
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #C11C84;
+            color: white;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            color: var(--dark-pink);
+            font-weight: 700;
+        }
+
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+
+        .hero {
+            background-color: #fff; 
+            text-align: center;
+            padding: 100px 20px;
+            border-bottom: 3px solid var(--accent-pink);
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-main);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+    
+        .partners-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+     
+        .partner-card {
+            background-color: var(--card-bg);
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05); 
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid transparent;
+        }
+
+        .partner-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(233, 30, 99, 0.1); 
+            border-color: var(--primary-pink);
+        }
+
+        .partner-logo {
+            max-width: 150px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        
+        .partner-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 5px;
+        }
+
+        .partner-card p {
+            font-size: 0.95rem;
+            margin-top: 0;
+            color: #666;
+        }
+
+        .cta-section {
+            background-color: var(--dark-pink);
+            color: #fff;
+            text-align: center;
+            padding: 80px 20px;
+            margin-top: 60px;
+            border-radius: 15px;
+        }
+
+        .cta-section h2 {
+            color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .btn-apply {
+            display: inline-block;
+            background-color: var(--accent-pink);
+            color: white;
+            padding: 15px 35px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-apply:hover {
+            background-color: #c2185b; 
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.2rem; }
+            .container { padding: 20px; }
+        }
