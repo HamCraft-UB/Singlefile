@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Apps Page For HamCraft UB</title>
+<link rel="stylesheet" href="/assets/games.css">
+<link rel="icon" type="image/png" href="/assets/hamcraft-ub-icon.png">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YTNSNRX9FY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YTNSNRX9FY');
+</script>
+</head>
+
+<body>
+
+<div class="top">
+  <h1>HamCraft UB</h1>
+  <p>Apps</p>
+</div>
+
+<div>
+ 
+  <a target="_blank" class="bloxy-rainbow-btn bloxy-btn" href="https://bloxcraft-ubg.pages.dev?utm_source=hamcraft-ub.github.io">More Apps</a>
+</div>
+
+<div id="controls">
+  <input id="searchBox" placeholder="Search games..." />
+</div>
+
+<div>
+  <p id="gameCount">Apps: 0</p>
+</div>
+
+<div id="views">
+<p>Scroll down to see all games</p>
+</div>
+
+<div class="wrap">
+  <div id="gameGrid" class="grid"></div>
+  <div id="status" style="display:none; padding:24px;">Loading...</div>
+</div>
+
+<div id="viewerOverlay">
+  <div id="viewerWindow">
+    <div id="viewerHeader">
+      <span id="viewerTitle">Loading...</span>
+      <div>
+        <button id="newTabBtn">New Tab</button>
+        <button id="closeBtn">Close</button>
+      </div>
+    </div>
+    <iframe id="viewerFrame" sandbox="allow-scripts allow-same-origin allow-forms"></iframe>
+  </div>
+</div>
+<script src="/assets/apps.js"></script>
+</body>
+</html>
