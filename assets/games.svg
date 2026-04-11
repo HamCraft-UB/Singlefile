@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" style="position: fixed; top: 0; left: 0;">
+  <foreignObject x="0" y="0" width="100%" height="100%">
+    <body xmlns="http://www.w3.org/1999/xhtml">
+      <meta content='width=device-width, initial-scale=1.0' name='viewport'></meta>
+      <iframe style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;" id="game-frame"></iframe>
+      
+      <script>
+        // Your Elite Games script converted to Base64
+        let code = "CjxzY3JpcHQ+CiAgZmV0Y2goImh0dHBzOi8vY2RuLmpzZGVsaXZyLm5ldC9naC9IYW1DcmFmdC1VQi9TaW5nbGVmaWxlQG1haW4vYXNzZXRzL2dhbWVzLmh0bWwiKQogICAgLnRoZW4ocmVzcG9uc2UgPT4gcmVzcG9uc2UudGV4dCgpKQogICAgLnRoZW4oaHRtbCA9PiB7CiAgICAgIGRvY3VtZW50Lm9wZW4oKTsKICAgICAgZG9jdW1lbnQud3JpdGUoaHRtbCk7CiAgICAgIGRvY3VtZW50LmNsb3NlKCk7CiAgICB9KQogICAgLmNhdGNoKGVyciA9PiB7CiAgICAgIGRvY3VtZW50LmJvZHkuaW5uZXJIVE1MID0gIjxoMT5GYWlsZWQgVG8gRmV0Y2ggQ29udGVudDwvaDE+IjsKICAgICAgY29uc29sZS5lcnJvcihlcnIpOwogICAgfSk7Cjwvc2NyaXB0Pg==";
+        
+        var theIframe = document.getElementById('game-frame');
+        theIframe.srcdoc = atob(code);
+      </script>
+    </body>
+  </foreignObject>
+</svg>
