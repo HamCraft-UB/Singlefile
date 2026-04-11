@@ -8,7 +8,7 @@ const searchBox = document.getElementById('searchBox');
 const gameCountEl = document.getElementById('gameCount');
 const viewerTitle = document.getElementById('viewerTitle');
 
-const HTML_BASE_URL = 'https://cdn.jsdelivr.net/gh/gn-math/html@master';
+const HTML_BASE_URL = 'https://cdn.jsdelivr.net/gh/freebuisness/html@main';
 
 let games = [];
 let filteredGames = [];
@@ -32,7 +32,7 @@ function createCardElement(game) {
 
   const img = document.createElement('img');
   img.loading = 'lazy';
-  img.dataset.src = game.cover.replace('{COVER_URL}', 'https://cdn.jsdelivr.net/gh/gn-math/covers@main');
+  img.dataset.src = game.cover.replace('{COVER_URL}', 'https://cdn.jsdelivr.net/gh/freebuisness/covers@main');
 
   imageObserver.observe(img);
 
@@ -51,7 +51,7 @@ async function loadGames() {
   status.style.display = 'block';
   status.textContent = "Loading games...";
   try {
-    const res = await fetch('https://cdn.jsdelivr.net/gh/gn-math/assets/zones.json', { cache: "no-store" });
+    const res = await fetch('https://cdn.jsdelivr.net/gh/freebuisness/assets/zones.json', { cache: "no-store" });
     const data = await res.json();
 
     games = data
